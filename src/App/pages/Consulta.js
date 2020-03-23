@@ -54,7 +54,7 @@ const Consulta = () => {
 
         setState({ ...state, data: data, datatype: 1 });
     };
-    return <div>MANUTENÇÃO, VOLTA EM 2 HORAS</div>;
+    return <div>MANUTENÇÃO NA API GRATÚITA</div>;
     return (
         <div>
             <div>
