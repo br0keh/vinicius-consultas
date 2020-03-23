@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #555;
+    cursor: default;
+}
+*:focus {
+    outline: none;
+}
+body {
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.contact {
+    font-family: monospace;
+    font-size: 15px;
+    color: #8b8b8b;
+    background: #f5f5f5;
+    font-weight: lighter;
+    margin-top: 10px 0px;
+}
+.email::before {
+    color: orange;
+    width: 2px;
+    height: 2px;
+    content: "•";
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.discord::before {
+    color: rgb(137, 55, 230);
+    width: 2px;
+    height: 2px;
+    content: "•";
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+hr {
+    border: 0;
+    margin: 20px 0px;
+}
