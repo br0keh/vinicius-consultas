@@ -38,7 +38,9 @@ export default function Resultado(props) {
                     <MdKeyboardArrowRight />
                 </span>
             </Container>
-            {state.data && state.show ? /*<Identidade data={state.data} />*/ {"Múltiplos resultados apenas na versão paga."} : null}
+            {state.data && state.show
+                ? /*<Identidade data={state.data} />*/ "Múltiplos resultados apenas na versão paga."
+                : null}
         </>
     );
 }
