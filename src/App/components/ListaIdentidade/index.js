@@ -8,14 +8,14 @@ export default function ListaIdentidade(props) {
     return (
         <Container>
             <span className="title">
-                Resultados ({Object.keys(data.list).length})
+                Resultados ({Object.keys(data).length})
             </span>
             <Lista>
-                {data.list.map(result => (
+                {data.map(result => (
                     <Resultado
-                        key={result.url}
+                        key={result.dados}
                         nome={result.nome}
-                        url={result.url}
+                        url={result.dados}
                         cidade={result.cidade}
                     />
                 ))}

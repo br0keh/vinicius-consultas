@@ -36,7 +36,7 @@ const Consulta = () => {
         event.preventDefault();
         let telefone = state.telefone;
         let pesquisarTelefone = await api.get(
-            `/v1/telefone/consultar/${telefone}`,
+            `/v2/consulta/celular?q=${telefone}`,
         );
         const { data } = pesquisarTelefone;
 
@@ -54,7 +54,7 @@ const Consulta = () => {
 
         setState({ ...state, data: data, datatype: 1 });
     };
-    return <div>MANUTENÇÃO NA API GRATÚITA</div>;
+    //return <div>MANUTENÇÃO NA API GRATÚITA</div>;
     return (
         <div>
             <div>

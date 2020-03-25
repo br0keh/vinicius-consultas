@@ -33,7 +33,7 @@ Endereços: ${data.enderecos}`;
             setState({ content_copied: false });
         }, 1000);
     };
-
+    
     return (
         <>
             {state.content_copied ? (
