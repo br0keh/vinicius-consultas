@@ -8,7 +8,7 @@ export default function Resultado(props) {
     const { url } = props;
     const [state, setState] = useState({ data: {}, show: false });
 
-    useEffect(() => {
+    /*useEffect(() => {
         async function fetchData() {
             let res = await api.get(url);
 
@@ -20,7 +20,7 @@ export default function Resultado(props) {
 
         fetchData();
         // eslint-disable-next-line
-    }, [url]);
+    }, [url]);*/
 
     function handleShowAndHide() {
         setState({
@@ -38,7 +38,7 @@ export default function Resultado(props) {
                     <MdKeyboardArrowRight />
                 </span>
             </Container>
-            {state.data && state.show ? <Identidade data={state.data} /> : null}
+            {state.data && state.show ? /*<Identidade data={state.data} />*/ {"Múltiplos resultados apenas na versão paga."} : null}
         </>
     );
 }
